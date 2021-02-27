@@ -1,5 +1,6 @@
-package com.cookey.cardinfofinder.api
+package com.cookey.cardinfofinder.interfaces
 
+import com.cookey.cardinfofinder.model.CardDetails
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

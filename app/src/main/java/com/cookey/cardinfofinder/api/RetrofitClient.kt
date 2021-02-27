@@ -1,5 +1,6 @@
 package com.cookey.cardinfofinder.api
 
+import com.cookey.cardinfofinder.interfaces.ApiService
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
