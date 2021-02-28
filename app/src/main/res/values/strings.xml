@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Card Info FInder</string>
+    <string name="app_name">Card Info Finder</string>
     <string name="intro_details">Scan Your Card Or Input Card Number To Get Card Details</string>
     <string name="enter_card_number_here">Enter card number here:</string>
     <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
