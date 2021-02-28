@@ -10,9 +10,8 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.GrantPermissionRule
-import com.cookey.cardinfofinder.utils.isConnectedToTheInternet
+import com.cookey.cardinfofinder.views.MainActivity
 import junit.framework.TestCase
-import org.junit.Assert
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

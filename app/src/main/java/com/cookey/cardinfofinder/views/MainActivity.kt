@@ -1,11 +1,10 @@
-package com.cookey.cardinfofinder
+package com.cookey.cardinfofinder.views
 
 import android.app.Activity
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.graphics.Color.red
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,10 +19,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import cards.pay.paycardsrecognizer.sdk.Card
 import cards.pay.paycardsrecognizer.sdk.ScanCardIntent
+import com.cookey.cardinfofinder.R
 import com.cookey.cardinfofinder.utils.isConnectedToTheInternet
 import com.cookey.cardinfofinder.utils.setCardNumber
 import com.cookey.cardinfofinder.viewmodels.CardViewModel
-import com.cookey.cardinfofinder.views.CardDetailActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
@@ -66,11 +65,15 @@ class MainActivity : AppCompatActivity() {
             snackbar =
                     Snackbar.make(view!!, "Check your internet connection.", Snackbar.LENGTH_INDEFINITE)
             val snackBarView = snackbar!!.view
-            snackBarView.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
+            snackBarView.setBackgroundColor(ContextCompat.getColor(this,
+                R.color.red
+            ))
             val textView =
                     snackBarView.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
             textView.gravity = View.TEXT_ALIGNMENT_CENTER
-            textView.setTextColor(ContextCompat.getColor(this, R.color.white))
+            textView.setTextColor(ContextCompat.getColor(this,
+                R.color.white
+            ))
         }
 
         activityInteractions()
