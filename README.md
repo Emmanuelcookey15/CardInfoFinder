@@ -1,4 +1,6 @@
 ## Cardinfofinder
+A simple android application fetches details of a debit or credit card by the card number using the Binlist API.
+It accepts input from a user either by manual input or scanning via OCR
 
 # Getting Started
 This file will attempt to explain my approach in creating this app. You can download or clone this project to see the source code and run it.
