@@ -24,11 +24,6 @@ App can scan Credit card using PAY-CARD library - ( https://github.com/faceterte
 
 App also automated to send request once your card number 16 - digits is completed
 
-## Images of Application Snippet for Project
-
-![Card Info App Image One](https://github.com/Emmanuelcookey15/images/blob/main/Screenshot_20210228-193421.png)
-
-![Card Info App Image Two](https://github.com/Emmanuelcookey15/images/blob/main/Screenshot_20210228-193526.png)
 
 # Project file
 
@@ -43,6 +38,12 @@ model folder contain CardDetail, Country, Bank and Number models defined from th
 interfaces contains -- ApiService which defines the retrofit method and CardResponseInterface to transfer data
 
 utils contains Utils.kt (contains a function to check if there's internet connection and a function to space card number)
+
+## Images of Application Snippet for Project
+
+![Card Info App Image One](https://github.com/Emmanuelcookey15/images/blob/main/Screenshot_20210228-193421.png)
+
+![Card Info App Image Two](https://github.com/Emmanuelcookey15/images/blob/main/Screenshot_20210228-193526.png)
 
 
 
