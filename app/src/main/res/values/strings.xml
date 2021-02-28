@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Card Info FInder</string>
-    <string name="intro_details">Scan Your Card or Input Card Number To Get Card Details</string>
+    <string name="intro_details">Scan Your Card Or Input Card Number To Get Card Details</string>
     <string name="enter_card_number_here">Enter card number here:</string>
     <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
     <string name="scan_card">Scan Card</string>
@@ -9,5 +9,13 @@
     <string name="please_wait">Please wait.....</string>
     <string name="bank">Bank</string>
     <string name="country">Country</string>
+    <string name="card_brand">Card brand</string>
+    <string name="card_type">Card type</string>
     <string name="currency">Currency</string>
+    <string name="numeric">Numeric</string>
+    <string name="country_name">Country Name</string>
+    <string name="country_alpha">Country Alpha</string>
+    <string name="name">Name</string>
+    <string name="bank_url">Bank Url</string>
+    <string name="bank_phone">Bank Phone Line</string>
 </resources>

@@ -3,48 +3,26 @@ package com.cookey.cardinfofinder.utils
 import android.content.ContentValues
 import android.content.Context
 import android.net.ConnectivityManager
+import android.net.Network
 import android.net.NetworkInfo
+import android.os.Build
 import android.text.Editable
 import android.util.Log
 import androidx.annotation.NonNull
+import androidx.annotation.RequiresApi
 import com.cookey.cardinfofinder.R
 
 
 /** connection manager **/
-@NonNull
-fun Context.isConnectedToTheInternet(): Boolean{
-    val cnxManager = applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-    try{
-        val netInfo : NetworkInfo? = cnxManager.activeNetworkInfo
-        return netInfo?.isConnectedOrConnecting ?: false
-    }catch (e: Exception){
-        Log.e(ContentValues.TAG, "isConnectedToTheInternet: ${e.message}")
-    }
-    return false
+@RequiresApi(Build.VERSION_CODES.M)
+fun Context.isConnectedToTheInternet(): Boolean {
+    val cnxManager = applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager
+    val netInfo : Network? = cnxManager?.activeNetwork
+    return netInfo != null
+
 }
 
 
-
-fun getCartLogo(s: Editable): Int{
-
-    when (s.substring(0, 1).toInt()) {
-        4 -> {
-            return R.drawable.ic_visa
-        }
-        5 -> {
-            return  R.drawable.ic_mastercard
-        }
-        6 -> {
-            return  R.drawable.ic_discover
-        }
-        3 -> {
-            return  R.drawable.ic_amex
-        }
-        else -> {
-            return  R.drawable.ic_warning
-        }
-    }
-}
 
 fun setCardNumber(s: Editable){
     val space = ' '

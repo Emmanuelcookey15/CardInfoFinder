@@ -11,7 +11,7 @@ class CardDetails : Serializable {
     var number: Number? = null
 
     @SerializedName("scheme")
-    @Expose var    scheme: String? = null
+    @Expose var scheme: String? = null
 
     @SerializedName("type")
     @Expose var type: String? = null
